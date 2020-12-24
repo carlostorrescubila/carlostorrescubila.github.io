@@ -33,18 +33,10 @@ body {
     float: left;
     padding: 10px;
 }
-  
+
 .column_content_left {
     align-items: center;
-    width: 650px;
-}
-
-.left {
-    width: 75%;
-}
-
-.right {
-width: 25%;
+    width: 750px;
 }
 
 /* Clear floats after the columns */
@@ -74,6 +66,17 @@ clear: both;
 
 .bottom{
     text-align: center;
+    background-color: #61b159;
+}
+
+div.bottom img{
+    padding: 10px 0 0 0; 
+    width: 45px;
+}
+
+div.bottom p{
+    text-align: center; 
+    padding: 10px 40px 40px 40px;
 }
 
 .button {
@@ -163,15 +166,6 @@ button, input, optgroup, select, textarea {
     margin: 0;
 }
 
-#navigation-bar{
-    position: fixed;
-}
-
-#navigation-bar a:hover {
-    color: #4CAF50;
-    font-size: 25px;
-}
-
 p{
     text-align: justify;
 }
@@ -202,10 +196,6 @@ p{
     min-height: 330px;
 }
 
-section {
-    display: block;
-}
-
 section#home{
     height: 100vh;
     width: 100%;
@@ -226,7 +216,8 @@ section#home .home__wrapper::after{
 
 section#contact{
     background-color: #d8d7d7;
-    height: 100vh;
+    clear: both;
+    min-height: 100vh;
     padding: 25px;
     text-align: left;
 }
@@ -238,7 +229,8 @@ section#projects{
 
 section#skills{
     background-color: #d8d7d7;
-    height: 100vh;
+    clear: both;
+    min-height: 100vh;
     z-index: -1;
 }
 
@@ -280,14 +272,6 @@ section#skills span:hover{
     float: center;
 }
 
-.socialmedia {
-    color: #000000;
-}
-
-.socialmedia:hover {
-    color: #4CAF50;
-}
-
 .technical_habilities {
     display: inline-block;
     font-size: .813rem;
@@ -301,13 +285,6 @@ section#skills span:hover{
 .technical_habilities span:hover{
     color: #5768ff;
     font-size: 25px;
-}
-
-.topnav{
-    font-size: 25px; 
-    margin-right: 0;
-    margin-left: 0;
-    position: fixed;
 }
 
 ul.socialmedia__list { 
@@ -330,28 +307,80 @@ ul.socialmedia__list li i:hover{
     color:#4CAF50
 }
 
+.topnav{
+    font-size: 25px; 
+    margin-right: 0;
+    margin-left: 0;
+    position: fixed;
+    width: 100%;
+}
+
 ul.topnav {
-  background-color: #333;  
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  opacity: 0.9;
-  overflow: hidden;
-  width: 100%;
-  z-index: 10;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 ul.topnav li {
-    float: right;
-    padding-right: 45px;
+    float: left;
+    font-size: 30px;
 }
 
 ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-ul.topnav li a.active {background-color: #4CAF50;}
+.topnav a:hover {
+    background-color: #111;
+    color: #4CAF50;
+    font-size: 30px;
+    margin: 0 0;
+}
+
+ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li {
+        float: none;
+        padding:  0 0 0 0;
+    }
+  }
+
+.column {
+    float: center;
+    width: 25%;
+    padding: 5px;
+    color:black;
+    font-size: 48px;
+    padding: 0 5px;
+}
+
+div.column i{
+    color: black;
+}
+
+div.column i:hover{ 
+    color:#4CAF50
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}

@@ -12,25 +12,21 @@
 <body>
     
     <!--This is my Topnav-->
-    <nav id="navigation-bar">
-        <ul class="topnav">
-            <li style="float:left; padding-left: 100px;">
-                <a href="#home" class="active">
-                    <div>
-                        <img src="https://www.flaticon.com/svg/static/icons/svg/69/69962.svg" style="width: 20px; padding: 0;">
-                    </div> 
-                </a>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li ><a href="#about">About</a></li>        
-        </ul>
-    </nav>
+    <ul class="topnav">
+        <li>
+            <a href="#home" class="active" title="Go to Home">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/69/69962.svg" style="width: 32px; padding: 0;">
+            </a>
+        </li>
+        <li ><a href="#about">About</a></li>  
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li> 
+    </ul>        
 
     <!--This is my Home tab-->
     <section id="home">
-        <div class="home__wrapper" style="height: 100%; padding:0; width: 100%;">
+        <div class="home__wrapper" style="padding:0;">
            <div class="home_container">
                <img src="./images/programing.svg" class="icon_me">
                <h1>Carlos Alfredo Torres Cubilla</h1>
@@ -50,7 +46,7 @@
                 <h1>About me</h1>
                 <p>
                     I’m currently working at Banco General in Panama City (Panama), 
-                    as a full-time Data Scientist. I am a passionate of statistics and
+                    as Analytical Assistants. I am a passionate of statistics and
                     sports 
                 </p>
                 <p>
@@ -67,7 +63,7 @@
             <div class="skills_container">
                 <h1>Skills</h1>
                 <div class="row">
-                    <div class="column left">
+                    <div class="column left"  style="float:left; margin:0; width:75%;">
                         <div class="column_content_left">
                             <h2>Coding:</h2>
                             <div class="row">
@@ -88,17 +84,17 @@
                                 <img src="./images/colab.png" style="height: 64px; padding: 0 5px;">
                                 <img src="./images/VS_Code.png" style="height: 64px; padding: 0 5px;">
                             </div>
-                            <h2>Technical:</h2>
-                            <span class="technical_habilities" style="font-size: 15px;">Data manipulation</span>
-                            <span class="technical_habilities" style="font-size: 15px;">Data visualization</span>
-                            <span class="technical_habilities" style="font-size: 15px;">Regression techniques</span>
-                            <span class="technical_habilities" style="font-size: 15px;">Classification methods</span>
-                            <span class="technical_habilities" style="font-size: 15px;">Clustering algorithms</span>
-                            <span class="technical_habilities" style="font-size: 15px;">Dimensionality reduction</span>
-                            <span class="technical_habilities" style="font-size: 15px;">Biplot methods</span>
+                                <h2>Technical:</h2>
+                                <span class="technical_habilities" style="font-size: 15px;">Data manipulation</span>
+                                <span class="technical_habilities" style="font-size: 15px;">Data visualization</span>
+                                <span class="technical_habilities" style="font-size: 15px;">Regression techniques</span>
+                                <span class="technical_habilities" style="font-size: 15px;">Classification methods</span>
+                                <span class="technical_habilities" style="font-size: 15px;">Clustering algorithms</span>
+                                <span class="technical_habilities" style="font-size: 15px;">Dimensionality reduction</span>
+                                <span class="technical_habilities" style="font-size: 15px;">Biplot methods</span>
                             </div>
                     </div>
-                    <div class="column right">
+                    <div class="column right"  style="float:left; margin:0; width:25%;">
                         <img src="https://media2.giphy.com/media/IeRdg7gLkfK1ly2mFU/giphy.gif?cid=790b7611naigyai3bzhxegitujcj3uodkzoaz13aozslgxmd&rid=giphy.gif" style="height: 300px; width: auto; margin: 100px 0;">
                     </div>
                 </div>
@@ -137,32 +133,31 @@
                             <span class="asterisk" style="color: red;">*</span>
                         </label>
                         <textarea class="input" placeholder="Leave your message" id="comments" name="comments" required=""></textarea>
+                        <br>
                         <input class="button" type="submit" value="SEND">
                     </form>
-                    <section class="socialmedia">
-                        <ul class="socialmedia__list">
-                            <li class="socialmedia__list-li">
-                                <a href="https://twitter.com/carlos_tc22" title="Go to Twitter profile" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="socialmedia__list-li">
-                                <a href="https://www.linkedin.com/in/seguramaria/" title="Go to LinkedIn profile" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="socialmedia__list-li">
-                                <a href="https://github.com/carlostorrescubila" title="Go to GitHub profile" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </li>
-                            <li class="socialmedia__list-li">
-                                <a href="mailto:carlos221296@gmail.com" title="Send email" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-envelope" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
+                    <div class="row" id="socialmedia">
+                        <div class="column">
+                            <a href="https://twitter.com/carlos_tc22" title="Go to Twitter profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a href="https://www.linkedin.com/in/seguramaria/" title="Go to LinkedIn profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a href="https://github.com/carlostorrescubila" title="Go to GitHub profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a href="mailto:carlos221296@gmail.com" title="Send email" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                    </div>
                 </section>
         </div>
     </section>
@@ -171,12 +166,13 @@
     <footer>
         <div class="bottom">
             <a href="#home">
-                <img src="https://www.flaticon.com/svg/static/icons/svg/17/17507.svg" style="padding: 0;width: 45px;">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/17/17507.svg">
             </a>
-            <p style="text-align: center;">
-                © 2020 with  <span>♥</span> by Carlos A. Torres Cubilla
+            <p>
+                © 2020 with  <span>♥</span> by Carlos A. Torres Cubilla 
+                <br>
+                Built with pure HTML and CSS
             </p> 
-            <p style="text-align: center;">Built with pure HTML and CSS</p>
         </div>
     </footer>
 
