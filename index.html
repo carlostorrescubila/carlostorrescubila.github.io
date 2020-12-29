@@ -63,7 +63,7 @@
             <div class="skills_container">
                 <h1>Skills</h1>
                 <div class="row">
-                    <div class="column left"  style="float:left; margin:0; width:75%;">
+                    <div style="float:left; margin:0; width:75%;">
                         <div class="column_content_left">
                             <h2>Coding:</h2>
                             <div class="row">
@@ -79,7 +79,7 @@
                             </div>
                             <h2>Work with:</h2>
                             <div class="row">
-                                <img src="./images/R_Studio.png" style="height: 64px; padding: 0 5px;" class="zoom">
+                                <img src="./images/R_Studio.png" style="height: 64px; padding: 0 5px;">
                                 <img src="./images/Jupyter.png" style="height: 64px; padding: 0 5px;">
                                 <img src="./images/colab.png" style="height: 64px; padding: 0 5px;">
                                 <img src="./images/VS_Code.png" style="height: 64px; padding: 0 5px;">
@@ -94,7 +94,7 @@
                                 <span class="technical_habilities" style="font-size: 15px;">Biplot methods</span>
                             </div>
                     </div>
-                    <div class="column right"  style="float:left; margin:0; width:25%;">
+                    <div style="float:left; margin:0; width:25%;">
                         <img src="https://media2.giphy.com/media/IeRdg7gLkfK1ly2mFU/giphy.gif?cid=790b7611naigyai3bzhxegitujcj3uodkzoaz13aozslgxmd&rid=giphy.gif" style="height: 300px; width: auto; margin: 100px 0;">
                     </div>
                 </div>
@@ -105,8 +105,87 @@
     <!--Projects-->
     <section id="projects">
         <div class="projects__wrapper">
-            <div class="projects_container">
+            <div>
                 <h1>Projects</h1>
+                <h2 style="margin-bottom: 0;">Web Apps</h2>
+                <div class="projects_apps">
+                    <div class="projects_apps">
+                        <div>
+                            <h3 style="margin: 20px 0 5px 0;">Covid-19 in CyL</h3>
+                            <a href="https://carlos-alfredo-torres-cubilla.shinyapps.io/covid-19_cyl/" target="_blank">
+                                <div class="projects_apps_div">
+                                    <img src="./images/Projects/virus.svg" width="150px">
+                                    <div class="projects_apps_middle">
+                                        <div class="projects_apps_text">
+                                            Web app to visualize the epidemiological evolution of COVID-19 in Castilla & León, Spain.
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 style="margin: 20px 0 5px 0;">VisualizeR</h3>
+                            <a href="https://github.com/carlostorrescubila/VisualizeR" target="_blank">
+                                <div class="projects_apps_div">
+                                    <img src="./images/Projects/report.svg" width="150px">
+                                    <div class="projects_apps_middle">
+                                        <div class="projects_apps_text">
+                                            WRITE DESCRIPTION HERE
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="margin-bottom: 0;">Open Source contributions</h2>
+                <div class="projects_packages">
+                    <div>
+                        <h3 style="margin: 20px 0 5px 0;"><i>SparseBiplots</i></h3>
+                        <a href="https://github.com/mitzicubillamontilla/SparseBiplots" target="_blank">
+                            <div class="projects_packages_div">
+                                <img src="./images/Projects/r.svg" height="130px" style="padding-top: 35px; padding-bottom: 35px; padding-left: 15px; padding-right: 15px;">
+                                <div class="projects_packages_middle">
+                                    <div class="projects_packages_text">
+                                        R package that performs the HJ-Biplot and modifications introducing Ridge, LASSO and Elastic Net penalty.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <h3 style="margin: 20px 0 5px 0;"><i>PyBiplots</i></h3>
+                        <a href="https://github.com/carlostorrescubila/PyBiplots" target="_blank">
+                            <div class="projects_packages_div">
+                                <img src="./images/Projects/Pythonlogo.svg" height="150px" style="padding: auto;">
+                                <div class="projects_packages_middle">
+                                    <div class="projects_packages_text">
+                                        Python package that performs the classic biplots methods.
+                                    </div>
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+                <h2 style="margin-bottom: 0;">Written works</h2> 
+                <div class="projects_write">
+                    <div style="float: center;">
+                        <h3 style="margin: 20px 0 5px 0;">Final Degree</h3>
+                        <a href="https://drive.google.com/file/d/19M1SvuViFIZaq2FgGnRBJPFjzmDP0jI0/view?usp=sharing" target="_blank">
+                            <div class="projects_write_div">
+                                <img src="./images/Projects/Thesis_icon.svg" width="150px">
+                            </div>
+                        </a>
+                    </div>
+                    <div style="float: center;">
+                        <h3 style="margin: 20px 0 5px 0;">Master's Thesis</h3>
+                        <a href="https://drive.google.com/file/d/1D_SqKJDBdKAcnG2wlvHQ9UBYkkdUiHSm/view?usp=sharing" target="_blank">
+                           <div class="projects_write_div">
+                                <img src="./images/Projects/Thesis_icon.svg" width="150px">
+                            </div> 
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -116,22 +195,23 @@
         <div class="form__wrapper" style="align-items: center;">
                 <h1>Contact</h1>
                 <section>
-                    <form action="https://formspree.io/mdoppave" method="post" class="contact-form">
+                    <form action="https://formspree.io/mdoppave" method="post">
                         <label for="name">
                             Name
-                            <span class="asterisk" style="color: red;">*</span>
+                            <span style="color: red;">*</span>
                         </label>
                         <input class="input" placeholder="Name..." type="text" id="name" name="name" required="">
                         <div class="email-tel">
-                            <label class="email-label " for="email">Email <span class="asterisk" style="color: red;">*</span></label>
+                            <label class="email-label " for="email">Email <span style="color: red;">*</span></label>
                             <input class="email-input input" placeholder="nombre.apellidos@mail.com" type="email" id="email" name="email" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                             <label class="phone-label" for="phone">Telephone number</label>
                             <input class="phone-input input" placeholder="Example: 123456789" type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
                         </div>
                         <label for="comments">
                             Message 
-                            <span class="asterisk" style="color: red;">*</span>
-                        </label>
+                            <span style="color: red;">*</span>
+                        </label> 
+                        <br>
                         <textarea class="input" placeholder="Leave your message" id="comments" name="comments" required=""></textarea>
                         <br>
                         <input class="button" type="submit" value="SEND">
@@ -165,7 +245,7 @@
     <!--Footer-->
     <footer>
         <div class="bottom">
-            <a href="#home">
+            <a href="#home" title="Back to Home">
                 <img src="https://www.flaticon.com/svg/static/icons/svg/17/17507.svg">
             </a>
             <p>
