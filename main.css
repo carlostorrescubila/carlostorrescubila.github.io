@@ -76,10 +76,6 @@ p{
     z-index: -1;
 }
 
-#skills span:hover{
-    background-color: #4CAF50;
-}
-
 /* CLASSES */
 
 .about__wrapper{
@@ -167,6 +163,21 @@ div.column i:hover{
     width: 750px;
 }
 
+@media screen and (max-width: 1000px) {
+    .column_content_left{
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .column_skills{
+        float:left; 
+        margin:0; 
+        width:75%;
+    }
+}
+
 .contact__wrapper{
     width: 100%;
     margin: auto;
@@ -217,9 +228,9 @@ div.column i:hover{
     padding: 60px;
     position: absolute;
     top: 0;
-    bottom: 20%;
-    left: 20%;
-    right: 20%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
 }
 
 .home_container h1{
@@ -236,27 +247,46 @@ div.column i:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 25%;
 }
 
 @media screen and (max-width: 600px) {
     .home_container{
         padding: 0;
-        padding-top: 75px;
+        padding-top: 30%;
     }
     .home_container h1{
         font-size: 15px;
     }
     .home_container h2{
         font-size: 15px;
-        padding: 15px;
+        padding-bottom: 10%;
     }
     .home_container .icon_me{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 50%;
     }
+}
+
+.icon-bar div a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 0;
+    color: rgb(3, 3, 3);
+    font-size: 48px;
+}
+
+.icon-bar div a:hover {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 0;
+    color: #4CAF50;
+    font-size: 48px;
+    overflow: hidden;
 }
 
 .icon_me{
@@ -444,12 +474,6 @@ div.column i:hover{
     transform: scale(1.1);
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .skills__wrapper{
     margin: auto;
     padding: 30px 0 0 0 ;
@@ -484,39 +508,28 @@ div.column i:hover{
     float: center;
 }
 
-ul.socialmedia__list { 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    opacity: 0.9;
-    overflow: hidden;
-    width: 100%;
-    z-index: 10;
+@media screen and (max-width: 1000px) {
+    .skills_gif{
+        display: none;
+    }
 }
 
-ul.socialmedia__list li i{ 
-    color:black;
-    font-size: 48px;
-    padding: 0 5px;
-}
-
-ul.socialmedia__list li i:hover{ 
-    color:#4CAF50
+.socialmedia_row::after {
+    content: "";
+    padding: 25px;
 }
 
 .technical_habilities {
     display: inline-block;
-    font-size: .813rem;
-    margin-right: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 15px;
+    margin: 10px;
     padding: .25rem .5rem;
     background-color: #fff;
     border-radius: .25rem;
 }
 
-.technical_habilities span:hover{
-    color: #5768ff;
-    font-size: 25px;
+.technical_habilities:hover{
+    background-color: #4CAF50;
 }
 
 .topnav{
