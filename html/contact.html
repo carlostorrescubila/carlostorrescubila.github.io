@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<section id="contact">
+
+    <style type="text/css">
+        @import url("css/contact.css");
+    </style>
+
+    <div class="form__wrapper">
+            <h1>Contact</h1>
+            <section style="align-items: center;">
+                <form action="https://formspree.io/mdoppave" method="post">
+                    <label for="name">
+                        Name
+                        <span style="color: red;">*</span>
+                    </label>
+                    <br>
+                    <input class="form_input" placeholder="Name..." type="text" id="name" name="name" required="">
+                    <br><br>
+                    <div class="email-tel">
+                        <label class="email-label " for="email">Email <span style="color: red;">*</span></label>
+                        <br>
+                        <input class="form_input" placeholder="yourmail@mail.com" type="email" id="email" name="email" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <br><br>
+                        <label class="phone-label" for="phone">Telephone number</label>
+                        <br>
+                        <input class="form_input" placeholder="Example: +00 123456789" type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+                    </div>
+                    <br>
+                    <label for="comments">
+                        Message 
+                        <span style="color: red;">*</span>
+                    </label> 
+                    <br>
+                    <textarea class="form_input" placeholder="Leave your message" id="comments" name="comments" required=""></textarea>
+                    <br>
+                    <input class="form_button" type="submit" value="SEND">
+                </form>
+                <div class="socialmedia_row" id="socialmedia">
+                    <div class="icon-bar">
+                        <div>
+                            <a href="https://twitter.com/carlos_tc22" title="Go to Twitter profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/carlos-alfredo-torres-cubilla/" title="Go to LinkedIn profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/carlostorrescubila" title="Go to GitHub profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:carlos221296@gmail.com" title="Send email" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+</section>
